@@ -2,7 +2,7 @@
 Use Spell to train a pix2pix model, run the model in tensorflow.js and ml5.js
 
 ## Demo:
-Edges2Pikachu: [https://yining1023.github.io/pix2pix_spell/edges2Pikachu](https://yining1023.github.io/pix2pix_spell/edges2Pikachu)
+Edges2Pikachu: [https://yining1023.github.io/pix2pix_spell/edges2pikachu/](https://yining1023.github.io/pix2pix_spell/edges2pikachu/)
 
 ## Training the model with [Spell](http://spell.run)
 

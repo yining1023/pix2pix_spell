@@ -61,8 +61,13 @@ python pix2pix.py --mode export --output_dir export/ --checkpoint facades_train/
 # It will create a new export folder
 
 # Port the model to tensorflow.js (python 2 doesn’t have tempfile, so use python3 instead)
+cd server
+cd static
+mkdir models
+cd ..
 python3 tools/export-checkpoint.py --checkpoint ../export --output_file static/models/facades_BtoA.pict
 # We should be able to get a file named facades_BtoA.pict, which is 13.6 MB.
 
 # Copy the model we got to the `models` folder.
+
 ```

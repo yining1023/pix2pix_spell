@@ -26,6 +26,8 @@ git commit -m “added facade images”
 # train the model
 # this may take 1-9 hours depending on GPU, on CPU you will be waiting for a bit
 # You could choose V100 or K80 as machine type
+# If you add `--ngf 32 --ndf 32` when training the model: python pix2pix.py --mode train --output_dir pikachu_train --max_epochs 200 --input_dir pikachu/train --which_direction BtoA --ngf 32 --ndf 32, the model will be smaller 13.6 MB, and it will take less time to train.
+
 spell run --machine-type V100 \
             --framework tensorflow \
   "python pix2pix.py \
@@ -66,7 +68,8 @@ cd static
 mkdir models
 cd ..
 python3 tools/export-checkpoint.py --checkpoint ../export --output_file static/models/facades_BtoA.pict
-# We should be able to get a file named facades_BtoA.pict, which is 13.6 MB.
+# We should be able to get a file named facades_BtoA.pict, which is 54 MB.
+# If you add `--ngf 32 --ndf 32` when training the model: python pix2pix.py --mode train --output_dir pikachu_train --max_epochs 200 --input_dir pikachu/train --which_direction BtoA --ngf 32 --ndf 32, the model will be smaller 13.6 MB, and it will take less time to train.
 
 # Copy the model we got to the `models` folder.
 

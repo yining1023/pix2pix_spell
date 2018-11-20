@@ -51,6 +51,7 @@ cd facades_train
 spell cp runs/YOUR_RUN_NUMBER/facades_train
 
 # test the model
+cd ..
 python pix2pix.py \
   --mode test \
   --output_dir facades_test \

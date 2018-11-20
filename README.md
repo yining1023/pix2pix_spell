@@ -57,7 +57,7 @@ python pix2pix.py \
   --output_dir facades_test \
   --input_dir facades/val \
   --checkpoint facades_train
-# After testing, you should be able to see output images in the facades_test folder
+# After testing, you should be able to see output images in the facades_test folder by opening the `index.html` file in the browser
 
 # export the model
 python pix2pix.py --mode export --output_dir export/ --checkpoint facades_train/ --which_direction BtoA

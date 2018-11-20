@@ -21,7 +21,7 @@ python tools/download-dataset.py facades
 
 # Let spell know the newly downloaded dataset
 git add .
-git commit -m “added facade images”
+git commit -m "added facade images"
 
 # train the model
 # this may take 1-9 hours depending on GPU, on CPU you will be waiting for a bit

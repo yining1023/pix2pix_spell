@@ -28,7 +28,7 @@ git commit -m "added facade images"
 # You could choose V100 or K80 as machine type
 # If you add `--ngf 32 --ndf 32` when training the model: python pix2pix.py --mode train --output_dir pikachu_train --max_epochs 200 --input_dir pikachu/train --which_direction BtoA --ngf 32 --ndf 32, the model will be smaller 13.6 MB, and it will take less time to train.
 
-spell run --machine-type V100 \
+spell run --machine-type K80 \
             --framework tensorflow \
   "python pix2pix.py \
   --mode train \

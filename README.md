@@ -37,7 +37,7 @@ spell run --machine-type K80 \
   --input_dir facades/train \
   --which_direction BtoA"
 
-# After the run is finished (1h, 8m, 16s)
+# After the run is finished (~4hs)
 # check out the result 
 spell ls runs/YOUR_RUN_NUMBER
 spell ls runs/YOUR_RUN_NUMBER/facades_train
